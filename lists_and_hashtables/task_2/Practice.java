@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Praktikum {
+public class Practice {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Praktikum {
             int command = scanner.nextInt();
 
             if (command == 1) {
-                System.out.println("Ваши сбережения: " + moneyBeforeSalary + " RUB");
+                System.out.println("Ваши сбережения: " + moneyBeforeSalary + " KZT");
                 System.out.println("В какую валюту хотите конвертировать? Доступные варианты: 1 - USD, 2 - EUR, 3 - RUB.");
                 int currency = scanner.nextInt();
                 converter.convert(moneyBeforeSalary, currency);
