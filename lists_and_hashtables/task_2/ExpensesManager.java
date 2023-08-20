@@ -10,8 +10,8 @@ public class ExpensesManager {
     double saveExpense(double moneyBeforeSalary, double expense) {
         moneyBeforeSalary = moneyBeforeSalary - expense;
         expenses.add(expense);
-        System.out.println("Значение сохранено! Ваш текущий баланс в рублях: " + moneyBeforeSalary);
-        if (moneyBeforeSalary < 1000) {
+        System.out.println("Значение сохранено! Ваш текущий баланс в тенге: " + moneyBeforeSalary);
+        if (moneyBeforeSalary < 5000) {
             System.out.println("На вашем счету осталось совсем немного. Стоит начать экономить!");
         }
         return moneyBeforeSalary;
@@ -19,7 +19,7 @@ public class ExpensesManager {
 
     void printAllExpenses() {
         for (int i = 0; i < expenses.size(); i++) {
-            System.out.println("Трата № " + (i + 1) + ". Потрачено " + expenses.get(i) + " рублей");
+            System.out.println("Трата № " + (i + 1) + ". Потрачено " + expenses.get(i) + " тенге");
         }
     }
 
